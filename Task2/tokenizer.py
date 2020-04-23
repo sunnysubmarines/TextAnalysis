@@ -8,6 +8,13 @@ import textdistance
 
 
 class Tokenizer:
+    def readtxt(inputPath):
+        file = open(inputPath, "r")
+        lines = file.readlines()
+        file.close()
+        list = [x for x in lines if x is not "\n"]
+        return list
+
     def unique(l):
         n = []
         for i in l:
@@ -15,16 +22,21 @@ class Tokenizer:
                 n.append(i)
         return n
 
-    def regexTokens(text):
+    def regex_tokens(text):
+        pattern = "([a-zA-Z]+)"
+        string_text = "".join(text)
+        result = re.findall(pattern, string_text)
+        tokens = nltk.regexp_tokenize(string_text, pattern)
+        return (tokens)
+
+    def flatten(self):
+        return [y for x in self for y in x]
+    def regex_unique_tokens(text):
         pattern = "([a-zA-Z]+)"
         stringtext = "".join(text)
         result = re.findall(pattern, stringtext)
         tokens = nltk.regexp_tokenize(stringtext, pattern)
-        #for match in result:
-         #   print (match.groups)
-
         return Tokenizer.unique(tokens)
-
 
     def listToTuples(list):
         tuples = []

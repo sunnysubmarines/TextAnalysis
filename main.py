@@ -5,13 +5,14 @@ import matplotlib as matplotlib
 import Task1.parse
 from Task1.parse import Parse
 from Task2.tokenizer import Tokenizer
+from Task3.dictionaries import ContrastAnalysis
 import matplotlib.pyplot as plt
 import pandas as pd
 # from scipy.cluster.hierarchy import  linkage, dendrogram
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.cluster.hierarchy as shc
-from Task3.articles_test import ContrastAnalysis
+
 
 def task1():
     #path1 = "Task1/txt.xml"
@@ -38,7 +39,7 @@ def task1():
 # text = task1()
 
 def task2():
-    text = Tokenizer.regexTokens(Parse.readtxt("Task2/text.txt"))
+    text = Tokenizer.regex_unique_tokens(Tokenizer.readtxt("Task2/text.txt"))
     l1 = text
     l2 = text
     hamming_matrix = np.zeros((len(l1), len(l2)))
@@ -87,22 +88,13 @@ def plot_dendrogram(model, **kwargs):
     plt.show()
 
 
-# tuples = Tokenizer.listToTuples(Tokenizer.regexTokens(text))
-# hamming = []
-# t= tuples[0]
-# for t in tuples:
-#     t = t+(Tokenizer.hamming(t[0], t[1]),Tokenizer.jarowinkler(t[0],t[1]),)
-#     print(t)
-# print(tuples)
-# X = np.random.rand(15, 10) # 15 samples, with 10 dimensions each
-# fig = ff.create_dendrogram(X, 1.5)
-# fig.update_layout(800, 500)
-# fig.show()
-
 
 def task3():
-    f = open("Task3/group 1/1.txt", "r", encoding='utf-8')
-    ContrastAnalysis.task(f.read())
+    folder1, folder2, folder3 = "Task3\group1", "Task3\group2", "Task3\group3"
+    #ContrastAnalysis.task([folder1, folder2, folder3])
+    ContrastAnalysis.task2([folder1, folder2, folder3])
+    #ContrastAnalysis.task([ "Task3\group3"])
+
 
 #task1()
 #task2()
