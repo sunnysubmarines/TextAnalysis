@@ -75,6 +75,7 @@ def createXML(list, xmlPath):
 
 class Parse:
 
+
     def readtxt(inputPath, outputPath):
         file = open(inputPath, "r")
         lines = file.readlines()

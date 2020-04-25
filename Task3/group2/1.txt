@@ -1,0 +1,27 @@
+
+NASA Calls on Gamers, Citizen Scientists to Help Map World’s Corals
+A user playing the new NeMO-Net game that helps NASA classify the world's coral from their own home
+A user playing the new NeMO-Net game that helps NASA classify the world's coral from their own home
+Credits: NASA/Ames Research Center/Ved Chirayath
+
+NASA invites video gamers and citizen scientists to embark on virtual ocean research expeditions to help map coral reefs around the world in an effort to better understand these threatened ecosystems.
+
+During the past several years, researchers at NASA’s Ames Research Center in California's Silicon Valley have developed new instruments that can look below the ocean surface in more detail than ever before. Using techniques originally developed to look at stars, these "fluid-lensing" cameras use complex calculations to undo the optical distortions created by the water over coral reefs.
+
+NASA has deployed these instruments – mounted on drones or aircraft – on expeditions to Puerto Rico, Guam, American Samoa, and elsewhere to collect 3D images of the ocean floor, including corals, algae and seagrass. However, the data alone do not tell the whole story of what's happening to the corals beneath the waves, which is why NASA needs your help.
+
+Enter NeMO-Net, a video game in which players identify and classify corals using these 3D images while virtually traveling the ocean on their own research vessel, the Nautilus. Principal investigator Ved Chirayath at Ames developed the neural network behind the game, also called NeMO-Net, or the Neural Multi-Modal Observation and Training Network, which will use player input to build a global coral map.
+
+"NeMO-Net leverages the most powerful force on this planet: not a fancy camera or a supercomputer, but people," said Chirayath. "Anyone, even a first grader, can play this game and sort through these data to help us map one of the most beautiful forms of life we know of."
+
+On each "dive," players interact with real NASA data, learning about the different kinds of corals that lie on the shallow ocean floor while highlighting where they appear in the imagery. Aboard their virtual research vessel, players will be able to track their progress, earn badges, read through the game's field guide, and access educational videos about life on the sea floor.
+
+As they play the game, players’ actions help train NASA's Pleiades supercomputer at Ames to recognize corals from any image of the ocean floor, even those taken with less powerful instruments. The supercomputer "learns" from the coral classifications players make by hand, using machine learning techniques to classify on its own.
+
+The more people who play NeMO-NET, the better the supercomputer's mapping abilities become. Once it has been able to accurately classify corals from low-resolution data included in the game, the supercomputer will be able to map out the world's corals at an unprecedented resolution. With that map, scientists will better understand what is happening to corals and find ways to preserve them.
+
+Coral reefs in the shallow waters off Earth’s subtropical and tropical shores are among the most complex and diverse ecosystems on the planet. Teeming with life, scientists estimate that these reefs provide homes for as many species as a tropical rainforest. Corals are at risk from rising ocean temperatures, pollution and ocean acidification. Scientists are seeking more data to understand the ways in which corals are responding to these forces.
+
+Reefs also play a part in combating disease. Marine systems – and particularly coral reefs – are often considered the “medicine cabinets” of the 21st century. Organisms such as sponges, mollusks and others that call reefs their homes have contributed to medicines used to treat viruses such as HIV and diseases such as cancer.
+
+NeMO-Net is available on the Apple App store and is playable on iOS devices and Mac computers, with a forthcoming release for Android systems.

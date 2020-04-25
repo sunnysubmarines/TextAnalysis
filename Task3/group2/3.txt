@@ -1,0 +1,48 @@
+
+NASA Data Helps Assess Landslide Risk in Rohingya Refugee Camps
+NASA and Columbia University scientists and staff survey efforts to halt additional land loss at a Rohingya refugee camp.
+NASA and Columbia University scientists and staff survey efforts to halt additional land loss at a Rohingya refugee camp with UN partners in Cox’s Bazar, Bangladesh. Tarps help prevent rainfall from infiltrating the soil and destabilizing the hillside.
+Credits: UN Development Programme/Eno Jonathan
+
+Camp managers and other local officials overseeing Rohingya refugee camps in Bangladesh are now incorporating NASA satellite observations into their decision making in order to reduce the risk to refugees from landslides and other natural hazards. Information like daily rain totals can help inform how  to lay out refugee camps and store supplies.
+
+More than 740,000 Rohingya refugees have fled to Bangladesh since August 2017. Many of them have sought shelter in camps located in the hilly countryside, where landslide risk may be the greatest. Increasing this danger is Bangladesh’s intense monsoon season. Approximately 80 percent of Bangladesh's yearly rain falls in just five months, from June to October, bringing with it an increased risk of flash flooding and landslides.
+
+When these refugee camps were built in the southeastern part of the country, plants and trees were removed and their roots no longer helped to hold the soil in place. The soaked hillsides are at even greater risk of cleaving off with heavy rains. In July 2019, after 14 inches of rain fell in 72 hours, 26 landslides in Rohingya refugee camps in Cox’s Bazar, Bangladesh, killed one person and left more than 4,500 without shelter.
+
+“We have little information on landslides," said Hafizol Islam, who is in charge of one of the most densely populated camps of the Kutupalong mega-camp in Cox’s Bazar, Bangladesh. "It is unpredictable for us and can happen at any time.”
+
+Now Islam and other camp managers have access to maps and a daily-updated website that provides near real-time NASA data on land use, rainfall and elevation from the Global Precipitation Measurement (GPM) mission and the Moderate Resolution Imaging Spectroradiometer (MODIS) instruments on NASA's Terra and Aqua satellites. Taken together, these maps and data provide a clearer picture of when and where landslide hazard is concentrated.
+
+NASA supports efforts that enable innovative uses of Earth science data for decision-making by a variety of users, from disaster response managers to businesses and humanitarian aid organizations to help improve the quality of life and strengthen the economy.
+
+"With landslides, flash floods and rapid development, the terrain of these camps is constantly changing," said Robert Emberson, NASA Postdoctoral Program fellow at NASA's Goddard Space Flight Center in Greenbelt, Maryland.
+
+Image of a refugee campsite in Bangladesh.
+Refugee camps built in the Bangladeshi hillside are vulnerable to sudden landslides.
+Credits: UN Development Programme/Eno Jonathan
+
+Emberson and other researchers from NASA’s Earth Applied Sciences Disasters Program and Columbia University’s International Research Institute for Climate and Society (IRI) are using new approaches to work alongside humanitarian end-users and develop products to address pressing needs in vulnerable settings. During a workshop and field visit this August to Cox’s Bazar, the NASA and IRI team worked with UN partners to bolster their understanding and integration of landslide hazard products, while also learning about the different needs of humanitarian actors.
+
+"This partnership has provided an iterative dialogue that enables us to develop NASA products as the changes occur, and supports the different timelines of hazard-related actions," said Emberson. The partnership is the first of its kind to seek the feedback of the people affected about the decisions made and actions needed. It is also the first to develop maps based on this input.
+
+The need for coordination is pressing. Bangladesh has seen steadily increasing rainfall totals over the past 50 years, and in addition to making monsoons in Asia more extreme, climate change may be doubling the likelihood of extreme rainfall events even before monsoon season begins. The results can be devastating: In September 2019, nearly 20,000 refugees were affected by 16 different floods, including 2,000 refugees who were affected by new landslides.
+
+The mechanism for coordination of the UN and NGO response to the Rohingya crisis is the Inter-Sector Coordination Group, which has adopted and endorsed the resulting landslide susceptibility map as the official common reference map for hazard assessment and risk reduction investments. This information is helping the United Nations Development Programme (UNDP) and other UN agencies plan risk reduction and hazard mitigation within the camps.
+
+“The partnership with NASA and IRI helps the UN agencies to assess risks like landslides or flash flooding and supports the disaster management in a scientific way to save lives and reduce damages in the refugee camps,” said Cathrine Haarsaker, project manager for the UNDP Disaster Risk Management in Cox's Bazar Programme.
+
+Shanna McClain, NASA Earth Science’s lead for Risk Reduction and Resilience in the Disasters Program, said this work is part of NASA’s efforts to integrate the needs of users into the early stages of developing data products and analyses. “These partnerships are reciprocal – we’re learning from each other,” McClain said. “The insight and expertise from local decision makers is informing NASA’s work and how we shape the products we provide.”
+
+Goddard’s Emberson said seeing the camps in person brought home the importance of connecting with the people on the ground. “Working with satellite data can sometimes feel quite abstract and separate from the people within the images,” he said. “Visiting the camps not only helped us understand more about the specific problems associated with landsliding to help improve our models in the future, but also drove home the human side to this disaster, emphasizing the urgency of our work.”
+
+Andrew Kruczkiewicz of IRI is one of the principal investigators of the project. "We need to understand if, why and when existing risk information is being used,” he said. “This strengthens the development of data services for humanitarian emergencies, where decisions and priorities change rapidly. Working in teams that bridge traditional professional and disciplinary boundaries gives data and climate scientists the opportunity to learn more about decision making in specialized contexts.”
+
+Next steps for the partnership between NASA, IRI and the UN agencies include the integration of different hazard types affecting the area, such as flash floods, and incorporating additional data that can more closely speak to the exposure of roads and buildings to these hazards. The team is co-developing the information with UNDP, the International Organization for Migration, the United Nations High Commission for Refugees, and the Inter-Sector Coordination Group for Cox’s Bazar through the Connecting Earth Observations to Decision Makers for Preparedness Actions project.
+
+The organizers say their partnership will serve as a template for future science-driven data development and integration for humanitarian efforts in complex settings.
+
+Lia Poteet
+NASA Earth Science Division Applied Sciences Program, Washington
+Last Updated: Nov. 19, 2019
+Editor: Brian Dunbar

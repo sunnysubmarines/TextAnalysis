@@ -1,0 +1,52 @@
+Creating a dataset using an API with Python
+Karan Bhanot
+Karan Bhanot
+Sep 22, 2018 · 5 min read
+“person using laptop” by rawpixel on Unsplash
+
+Whenever we begin a Machine Learning project, the first thing that we need is a dataset. While there are many datasets that you can find online with varied information, sometimes you wish to extract data on your own and begin your own investigation. This is when an API provided by a website can come to the rescue.
+
+    An application program interface (API) is code that allows two software programs to communicate with each other. The API defines the correct way for a developer to write a program that requests services from an operating system (OS) or other application. — TechTarget
+
+API is actually a very simple tool that allows anyone to access information from a given website. You might require the use of certain headers but some APIs require just the URL. In this particular article, I’ll use the Twitch API provided by Free Code Camp Twitch API Pass-through. This API route does not require any client id to run, thus making it very simple to access Twitch Data. The whole project is available as a Notebook in the Create-dataset-using-API repository.
+Import Libraries
+
+As part of accessing the API content and getting the data into a .CSV file, we’ll have to import a number of Python Libraries.
+
+    requests library helps us get the content from the API by using the get() method. The json() method converts the API response to JSON format for easy handling.
+    json library is needed so that we can work with the JSON content we get from the API. In this case, we get a dictionary for each Channel’s information such as name, id, views and other information.
+    pandas library helps to create a dataframe which we can export to a .CSV file in correct format with proper headings and indexing.
+
+Understand the API
+
+We first need to understand what all information can be accessed from the API. For that we use the example of the channel Free Code Camp to make the API call and check the information we get.
+This prints the response of the API
+
+To access the API response, we use the function call requests.get(url).json() which not only gets the response from the API for the url but also gets the JSON format for it. We then dump the data using dump() method into content so that we can view it in a more presentable view. The output of the code is as follows:
+Response for API
+
+If we look closely at the output, we can see that there is a lot of information that we have received. We get the id, links to various other sections, followers, name, language, status, url, views and much more. Now, we can loop through a list of channels, get information for each channel and compile it into a dataset. I will be using a few properties from this list including _id, display_name, status, followers and views.
+Create the dataset
+
+Now that we are aware of what to expect from the API response, let’s start with compiling the data together and creating our dataset. For this blog, we’ll consider a list of channels that I collected online.
+
+We will first start by defining out list of channels in an array. Then for each channel, we’ll use the API to get its information and store each channel’s information inside another array channels_list using the append() method till we get all information collected together in one place. The request response is in JSON format, so to access any key value pair we simply write the key’s name within square brackets after the JSONContent variable. Now, we use the pandas library to convert this array into a pandas Dataframe using the method DataFrame() provided in pandas library. A dataframe is a representation of the data in a tabular form similar to a table, where data is expressed in terms of rows and columns. This dataframe allows fast manipulation of data using various methods.
+Create dataframe using Pandas
+
+The pandas sample() method displays randomly selected rows of the dataframe. In this method, we pass the number of rows we wish to show. Here, let’s display 5 rows.
+dataset.sample(5)
+
+On close inspection, we see that the dataset has two minor problems. Let’s address them one by one.
+
+    Headings: Presently, the headings are numbers and unreflective of the data each column represents. It might seem less important with this dataset because it has only a few columns. However, when you’ll explore datasets with 100s of columns, this step will become really important. Here, we define the columns using the columns() method provided by pandas. In this case, we explicitly defined the headings but in certain cases, you can pick up the keys as headings directly.
+    None/Null/Blank Values: Some of the rows will have missing values. In such cases, we’ll have two options. We can either remove the complete row where any value is blank or we can input some carefully selected value in the blank spaces. Here, the status column will have None in some cases. We’ll remove these rows by using the method dropna(axis = 0, how = 'any', inplace = True) which drops rows with blank values in the dataset itself. Then, we change the index of the numbers from 0 to the length of the dataset using the method RangeIndex(len(dataset.index)).
+
+Add column headings and update index
+Export Dataset
+
+Our dataset is now ready, and can be exported to an external file. We use the to_csv() method. We define two paramteres. The first parameter refers to the name of the file. The second parameter is a boolean that represents if the first column in the exported file will have the index or not. We now have a .CSV file with the dataset we created.
+Dataset.csv
+
+In this article, we discussed an approach to create our own dataset using the Twitch API and Python. You can follow a similar approach to access information through any other API. Give it a try using the GitHub API.
+
+Please feel free to share your thoughts and hit me up with any questions you might have.
