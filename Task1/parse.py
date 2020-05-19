@@ -23,7 +23,7 @@ def pretty(elem):
     return reparsed.toprettyxml("  ")
 
 
-def writeToXML(text, xmlPath):
+def write_to_xml(text, xmlPath):
     element = ET.Element("doc")
     for line in text:
         p = ET.SubElement(element, "block")
@@ -36,7 +36,7 @@ def writeToXML(text, xmlPath):
     file.close()
 
 
-def writeToXMLwithHeaders(lines, xmlPath):
+def write_to_xml_with_headers(lines, xmlPath):
     # appt = ET.Element("block", name=line.value)
     element = ET.Element("doc")
     for line in lines:
@@ -55,7 +55,7 @@ def writeToXMLwithHeaders(lines, xmlPath):
     file.close()
 
 
-def createXML(list, xmlPath):
+def create_xml(list, xmlPath):
     root = ET.Element("doc")
 
     for line in list:
@@ -76,28 +76,28 @@ def createXML(list, xmlPath):
 class Parse:
 
 
-    def readtxt(inputPath, outputPath):
-        file = open(inputPath, "r")
+    def read_txt(input_path, output_path):
+        file = open(input_path, "r")
         lines = file.readlines()
         file.close()
         list = [x for x in lines if x is not "\n"]
-        writeToXMLwithHeaders(list, outputPath)
+        write_to_xml_with_headers(list, output_path)
 
-    def readDocx(inputPath, outputPath):
-        document = Document(inputPath)
+    def read_docx(input_path, output_path):
+        document = Document(input_path)
         lines = []
         for para in document.paragraphs:
             if para is not "\n":
                 lines.append(para.text)
         # list = [x for x in lines if x is not "\n"]
-        writeToXMLwithHeaders(lines, outputPath)
+        write_to_xml_with_headers(lines, output_path)
 
-    def readPdf(inputPath, outputPath):
+    def read_pdf(input_path, output_path):
         rsrcmgr = PDFResourceManager()
         retstr = StringIO()
         laparams = LAParams()
         device = TextConverter(rsrcmgr, retstr, laparams)
-        fp = open(inputPath, 'rb')
+        fp = open(input_path, 'rb')
         interpreter = PDFPageInterpreter(rsrcmgr, device)
         password = ""
         maxpages = 0
@@ -110,9 +110,9 @@ class Parse:
         device.close()
         retstr.close()
         text = text.replace("", "").split("  ")
-        writeToXMLwithHeaders(text, outputPath)
+        write_to_xml_with_headers(text, output_path)
 
-    def readHtml(url, xmlPath):
+    def read_html(url, xmlPath):
         list = []
         rs = urlopen(url)
         root = BeautifulSoup(rs, 'html.parser')
@@ -130,7 +130,7 @@ class Parse:
             p = regex.sub('', str(p))
             if p!='':
                 list.append((p, "text"))
-            createXML(list, xmlPath)
+            create_xml(list, xmlPath)
         # soup = BeautifulSoup(html, "lxml")
         #
         # # kill all script and style elements
